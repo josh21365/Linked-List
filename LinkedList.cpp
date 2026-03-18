@@ -1,6 +1,6 @@
 //============================================================================
 // Name        : LinkedList.cpp
-// Author      : Your Name
+// Author      : Joshua Velazquez
 // Version     : 1.0
 // Copyright   : Copyright © 2023 SNHU COCE
 // Description : Lab 3-2 Lists and Searching
@@ -81,6 +81,8 @@ public:
 LinkedList::LinkedList() {
     // FIXME (1): Initialize housekeeping variables
     //set head and tail equal to nullptr
+    head == nullptr;
+    tail == nullptr;
 }
 
 /**
