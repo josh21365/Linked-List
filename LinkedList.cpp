@@ -107,12 +107,24 @@ LinkedList::~LinkedList() {
 void LinkedList::Append(Bid bid) {
     // FIXME (2): Implement append logic
     //Create new node
+    Node* newNode = new Node;
     //if there is nothing at the head...
-            // new node becomes the head and the tail
+    if (head == nullptr)
+    {
+        // new node becomes the head and the tail
+        head = newNode;
+        tail = newNode;
+    }
     //else 
+    else
+    {
         // make current tail node point to the new node
-        // and tail becomes the new node
+        tail->next = newNode;
+       // and tail becomes the new node
+        tail = newNode;
+    }
     //increase size count
+    size++;
 }
 
 /**
