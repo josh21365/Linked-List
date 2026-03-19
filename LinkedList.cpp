@@ -133,12 +133,18 @@ void LinkedList::Append(Bid bid) {
 void LinkedList::Prepend(Bid bid) {
     // FIXME (3): Implement prepend logic
     // Create new node
-
+    Node* newNode = new Node;
     // if there is already something at the head...
+    if (head != nullptr)
+    {
         // new node points to current head as its next node
+        head->next = newNode;
+    }
 
     // head now becomes the new node
+    head = newNode;
     //increase size count
+    size++;
 
 }
 
